@@ -1,0 +1,102 @@
+
+@media screen and (max-width: 700px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+    .logo {
+        margin : 5px;
+        
+    }
+    .menu {
+        display: block;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .menu:hover, .close:hover {
+        transform: scale(1.1);
+    }
+    nav {
+        min-height: 16vh;
+    }
+   
+    nav ul {
+        position: absolute;
+        top: 0;
+        right: 0 ;
+        display: none;
+        background-color: gainsboro ;
+        padding: 10px;
+        margin-right: 0;
+    }
+
+    nav ul li {
+        margin: 15px;
+        
+    }
+    .close {
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+    
+    .row {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .row:nth-child(1) > p {
+        order: 2 ;
+    }
+    .row:nth-child(2) > p {
+        order: 2 ;
+    }
+    .row:nth-child(3) > p {
+        order: 2 ;
+    }
+
+    .container3 {
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+    
+    }
+    .container4 {
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        width: 95%;
+        margin-top: 100px;
+     }
+
+     .container4 > * {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+
+      .container5 {
+          width: 90%;
+          margin: 0px;
+          margin: auto;
+          margin-bottom: 25px;
+      }
+      iframe {
+          width: 100%;
+          margin: auto;
+          float: left;
+      }
+
+      footer {
+          font-size: 1rem;
+          padding: 5px;
+      }
+      .container1 {
+        width: 95%;
+        margin: auto;
+        text-align: left;
+    }
+}

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: gainsboro ;
+    font-family: Poppins;
+    font-size: 1.3rem;
+}
+
+#home {
+    min-height: 100vh;  
+}
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 228, 196);
+    height: 12vh;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 50px;
+}
+
+
+nav ul li {
+    margin: 0 10px;
+}
+
+
+nav ul li a {
+  text-decoration: none ;
+  color: black  ;
+  text-transform: uppercase;
+  position: relative;
+}
+
+
+nav ul li a::before {
+   content: "";
+   position: absolute;
+   top : 95% ;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 4px;
+   width: 0;
+   background-color: goldenrod;
+   transition: .6s ease ;
+   border-radius: 10px ;
+}
+
+
+nav ul li a:hover::before {
+    width: 90%;
+}
+
+.logo {
+    margin: 5px;  
+}
+
+.menu 
+{ display: none;
+}
+
+.close {
+    display: none;
+}
+.slide {
+    width: 100%;
+    height: 100vh ;
+    position: relative;
+}
+
+.title {
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 4rem ;
+    color: rgba(192, 45, 45, 0.692) ;
+}
+
+
+span {
+    opacity: 0;
+    transition: 0.6s ease;
+}
+
+.fade {
+    opacity: 1;
+}
+
+.container1 {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+#vendors {
+    min-height: 100vh;
+    margin-top: 100px;
+}
+
+#vendors h1 {
+    text-align: center;
+    color : rgba(255, 0, 0, 0.603) ;
+}
+
+.container2{
+
+    width : 70% ;
+   margin: auto;
+   margin-top: 50px;
+   
+}
+
+.row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 2rem;
+    background-color: rgba(250, 235, 215, 0.918);
+}
+
+.row > p {
+    padding: 25px;
+}
+
+.row img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.container2 > p {
+    background-color: antiquewhite;
+    padding: 15px;
+}
+
+
+.row:nth-child(2) > p {
+    order: 2 ;
+}
+
+
+#sugar {
+    min-height: 100vh;
+    background-image: url("img/sucres.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sucre {
+    background-color: rgba(250, 235, 215, 0.568);
+    padding: 5px;
+}
+
+.sucre:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#sugar > h1 {
+    color : white ;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 70px 0;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+}
+.container3 {
+    margin: auto;
+    width: 80%;
+    display: grid ;
+    grid-template-columns: repeat(3,1fr);
+    gap: 35px
+
+}
+#contact {
+min-height: 100vh ;
+position: relative;
+}
+.container4 {
+   display: flex;
+   justify-content: space-between ;
+   align-items: center;
+   margin: auto;
+   width: 80%;
+   margin-top: 100px;
+}
+
+.container4 > * {
+  width: 40%;
+
+}
+
+input[type = "text"], textarea 
+{
+    width: 100%;
+    font-size: 1.4rem ;
+}
+
+input[type = "submit"] {
+    height: 40px;
+    width: 30%;
+    background-color: rgba(0, 128, 0, 0.651);
+    margin-top: 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.4rem ;
+    border: none;
+    
+}
+label {
+    text-transform: capitalize;
+}
+.first h1 , .container5 h1{
+    color : rgba(0, 128, 0, 0.651);
+    white-space: nowrap ;
+}
+
+footer {
+    background-color: white;
+    border-top: 1px dotted black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+}
+
+footer img {
+    margin : 0 10px ;
+    cursor: pointer ;
+}
+
+
+.container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px;
+}
